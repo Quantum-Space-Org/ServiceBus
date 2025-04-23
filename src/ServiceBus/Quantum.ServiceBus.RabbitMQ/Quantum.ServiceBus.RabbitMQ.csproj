@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<EnablePreviewFeatures>true</EnablePreviewFeatures>
+		<Authors>Masoud Bahrami</Authors>
+		<Company>Quantum Space Fundation</Company>
+		<Version>0.0.1</Version>
+		<PackageProjectUrl>https://github.com/Quantum-Space-Org/Core</PackageProjectUrl>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+
+		<PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Quantum.ServiceBus\Quantum.ServiceBus.csproj" />
+	</ItemGroup>
+
+</Project>

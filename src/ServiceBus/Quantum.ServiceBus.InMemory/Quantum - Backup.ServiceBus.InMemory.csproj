@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<EnablePreviewFeatures>true</EnablePreviewFeatures>
+		<Authors>Masoud Bahrami</Authors>
+		<Company>Quantum Space Fundation</Company>
+		<Version>0.0.1</Version>
+		<PackageProjectUrl>https://github.com/Quantum-Space-Org/Core</PackageProjectUrl>
+
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Quantum.Dispatcher\Quantum.Dispatcher.csproj" />
+		<ProjectReference Include="..\Quantum.ServiceBus\Quantum.ServiceBus.csproj" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath>../../../localPackages/Quantum.ServiceBus.InMemory</OutputPath>
+	</PropertyGroup>
+
+</Project>
