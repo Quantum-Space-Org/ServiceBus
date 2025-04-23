@@ -18,7 +18,7 @@ if [ -z "$nupkgs" ]; then
   echo "❌ No .nupkg files found in ./build"
   exit 1
 fi
-
+ 
 echo "✅ Found the following .nupkg files:"
 echo "$nupkgs"
 
